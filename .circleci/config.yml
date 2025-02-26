@@ -1,0 +1,19 @@
+versions: 2.1
+jobs:
+  lint-css:
+    docker:
+      - image: cimg/node:latest
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
+      - run: 
+          name: Run StyleLint
+          command: npm run lint:css
+          
+workflows:
+  version: 2
+  lint:
+    jobs:
+      - lint-css
