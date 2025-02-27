@@ -2,7 +2,7 @@ versions: 2.1
 jobs:
   lint-css:
     docker:
-      - image: cimg/node:14
+      - image: cimg/node:18.17
     steps:
       - checkout
       - run:
