@@ -9,7 +9,7 @@
   height: 550px;
   margin: 50px auto;
   background: #141414;
-  border: solid black 1px;
+  border: solid #0000 1px;
 }
 
 .image img {
@@ -34,7 +34,7 @@
 
 .content p {
   color: #d3d3d3;
-  margin: 0px 15px;
+  margin: 0 15px;
   text-align: justify;
   font-weight: lighter;
 }
